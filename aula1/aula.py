@@ -60,9 +60,8 @@ for linha in tabela.index:  # para cada linha na tabela
     tipo = tabela.loc[linha, "tipo"]
     pyautogui.write(tipo)
      
-
     pyautogui.press("tab")
-    categoria = tabela.loc[linha, "categoria"]
+    categoria = str(tabela.loc[linha, "categoria"])
     pyautogui.write(categoria)   
 
     pyautogui.press("tab")
